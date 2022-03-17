@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s;
+}
+#mainnav{
+  padding: 10px;
+  margin: 10px;
+}
+#mainnav ul{
+  background: #3B5998;
+  list-style: none;
+  padding: 0px;
+  width: 200px;
+  text-align: left;
+}
+#mainnav ul li{
+  position: relative;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #fff;
+}
+#mainnav ul .thefirst{
+  background: #17306E;
+}
+#mainnav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 0 16px;
+  display: block;
+}
+#mainnav li:hover{
+  background: #17306E;
+}
+#mainnav .sub-menu{
+  position: absolute;
+  left: 200px;
+  top: 0px;
+  width: 200px;
+  display: none;
+  text-align: left;
+  border-left: 1px solid #fff;
+  font-size: 90%;
+  border-radius: 0px 10px 10px 0px;
+}
+#mainnav li:hover .sub-menu{
+  display: block;
+  background: #3B5998;
+  color: red;
+}
+#mainnav .sub-menu2{
+  position: absolute;
+  left: 200px;
+  top: 0;
+  width: 200px;
+  border-left: 1px solid #fff;
+  border-radius: 0px 10px 10px 0px;
+  display: none;
+}
+#mainnav .sub-menu li:hover .sub-menu2{
+  display: block;
+}
+#mainnav .sub-menu3{
+  position: absolute;
+  left: 200px;
+  top: 0;
+  width: 200px;
+  border-left: 1px solid #fff;
+  border-radius: 0px 10px 10px 0px;
+  display: none;
+}
+#mainnav .sub-menu2 li:hover .sub-menu3{
+  display: block;
+}
+</style>
+<body>
+    <div id="mainnav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+          <li class="thefirst"><a href="#">Products</a>
+            <ul class="sub-menu">
+              <li><a href="#">Photography</a></li>
+              <li><a href="#">Wordpress</a></li>
+              <li><a href="#">Hosting-Domain</a></li>
+              <li><a href="#">SEO</a></li>
+              <li><a href="#">Tai nguyen</a></li>
+              <li><a href="#">Ma nguon mo</a></li>
+              <li><a href="#">Web development</a></li>
+              <li><a href="#">Cong cu</a>
+              <ul class="sub-menu2">
+                  <li><a href="#"> item 1</a></li>
+                  <li><a href="#"> item 2</a>
+                    <ul class="sub-menu3">
+                      <li><a href="#">item 1.a</a></li>
+                      <li><a href="#">item 2.a</a></li>
+                      <li><a href="#">item 3.a</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">item 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+</body>
+</html>
